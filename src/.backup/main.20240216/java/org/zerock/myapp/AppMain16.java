@@ -1,0 +1,82 @@
+package org.zerock.myapp;
+
+import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import lombok.NoArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+
+import java.util.Arrays;
+
+
+@Log4j2
+@NoArgsConstructor
+public class AppMain16 extends Application {
+
+
+    @Override
+    public void init() throws Exception {
+        log.trace("init() invoked.");
+    } // init
+
+    @Override
+    public void stop() throws Exception {
+        log.trace("stop() invoked.");
+    } // stop
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        log.trace("start({}) invoked.", primaryStage);
+
+        // --------------
+//        Parent root = FXMLLoader.<HBox>load(
+//            Objects.requireNonNull(
+//                this.getClass().getResource("AppMain16.fxml"),
+//                "No AppMain16.fxml found."
+//            )
+//        );     // OK : 1st. method
+//        log.info("\t+ root: {}", root);
+//
+//        ObservableList<Node> children = root.getChildrenUnmodifiable(); // if root is a Parent,
+//        children.forEach(log::info);
+
+        // --------------
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("AppMain16.fxml"));      // OK: 2nd. method
+        HBox root = loader.<HBox>load();
+        log.info("\t+ root: {}", root);
+
+        ObservableList<Node> children = root.getChildren();           // if root is a HBox,
+        children.forEach(log::info);
+
+        // --------------
+        primaryStage.setTitle("AppMain16");
+
+        /*
+         * Specifies the style for this stage.
+         * This must be done prior to making the stage visible. (***)
+         */
+//        primaryStage.initStyle(StageStyle.DECORATED);         // Ordinary window
+//        primaryStage.initStyle(StageStyle.UNDECORATED);       // *NO* caption bar on window
+//        primaryStage.initStyle(StageStyle.TRANSPARENT);       // *NOT* supported on windows platform.
+        primaryStage.initStyle(StageStyle.UTILITY);           // Like Dialog Window.
+//        primaryStage.initStyle(StageStyle.UNIFIED);           // *NOT* supported on windows platform.
+
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.setAlwaysOnTop(true);
+
+        primaryStage.show();
+    } // start
+
+
+    public static void main(String... args) {
+        log.trace("main({}) invoked.", Arrays.toString(args));
+        Application.launch(args);
+    } // main
+
+} // end class

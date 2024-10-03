@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/21.0.1">
+   <children>
+      <VBox id="vbox1" prefHeight="100.0" prefWidth="100.0" />
+      <VBox id="vbox2" prefHeight="100.0" prefWidth="100.0" />
+      <VBox id="vbox3" prefHeight="100.0" prefWidth="100.0" />
+      <VBox id="vbox4" prefHeight="100.0" prefWidth="100.0" />
+      <VBox id="vbox5" prefHeight="100.0" prefWidth="100.0" />
+      <VBox id="vbox6" prefHeight="100.0" prefWidth="100.0" />
+   </children>
+
+   <padding>
+      <Insets topRightBottomLeft="10.0" />
+   </padding>
+</HBox>
+

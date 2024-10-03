@@ -1,0 +1,10 @@
+#root {
+    -fx-padding: 10;
+}
+Label {
+    -fx-font-size: 22;
+    -fx-font-family: "Lucida Sans Unicode";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #000000, #ff0000);
+}
+

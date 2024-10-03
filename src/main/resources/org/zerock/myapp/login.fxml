@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="login" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.zerock.myapp.controller.LoginController">
+
+   <top>
+      <BorderPane prefHeight="16.0" prefWidth="300.0" style="-fx-background-color: #eaeaea;">
+         <left>
+            <Button fx:id="btnMain" text="&lt;&lt; Main" onAction="#handleBtnMain">
+               <font><Font name="Lucida Sans Unicode" size="11.0" /></font>
+            </Button>
+         </left>
+
+         <center>
+            <Label alignment="CENTER" text="Login Scene">
+               <font><Font name="Lucida Sans Unicode" size="13.0" /></font>
+            </Label>
+         </center>
+
+         <right>
+            <Button fx:id="btnClose" text="Close" onAction="#handleBtnClose">
+               <font><Font name="Lucida Sans Unicode" size="11.0" /></font>
+            </Button>
+         </right>
+
+         <padding>
+            <Insets topRightBottomLeft="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+
+   <center>
+      <VBox style="-fx-background-color: #770088;" />
+   </center>
+
+</BorderPane>

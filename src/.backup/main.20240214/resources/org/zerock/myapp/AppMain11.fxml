@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.TilePane?>
+
+
+<TilePane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+
+        hgap="10.0"
+        vgap="10.0"
+
+        prefTileWidth="100."
+        prefTileHeight="100.">
+
+   <children>
+      <ImageView>
+         <image>
+             <!-- Absolute path *NOT* permitted -->
+            <Image url="@../../../images/fruit1.jpg" />
+         </image>
+      </ImageView>
+
+       <ImageView>
+         <image>
+             <!-- Absolute path *NOT* permitted -->
+            <Image url="@../../../images/fruit2.jpg" />
+         </image>
+      </ImageView>
+
+       <ImageView>
+         <image>
+             <!-- Absolute path *NOT* permitted -->
+            <Image url="@../../../images/fruit3.jpg" />
+         </image>
+      </ImageView>
+
+       <ImageView>
+         <image>
+             <!-- Absolute path *NOT* permitted -->
+            <Image url="@../../../images/fruit4.jpg" />
+         </image>
+      </ImageView>
+
+       <ImageView>
+         <image>
+             <!-- Absolute path *NOT* permitted -->
+            <Image url="@../../../images/fruit5.jpg" />
+         </image>
+      </ImageView>
+   </children>
+
+   <padding>
+      <Insets topRightBottomLeft="10." />
+   </padding>
+</TilePane>

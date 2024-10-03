@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+
+
+<BorderPane
+     prefHeight="400.0"
+     prefWidth="600.0"
+
+     fx:controller="org.zerock.myapp.controller.RootController20"
+
+     xmlns="http://javafx.com/javafx/21.0.1"
+     xmlns:fx="http://javafx.com/fxml/1">
+
+   <padding>
+      <Insets topRightBottomLeft="10.0" />
+   </padding>
+
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" alignment="CENTER" spacing="10.0">
+         <children>
+
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" alignment="CENTER_LEFT">
+               <children>
+                  <CheckBox fx:id="check1" text="안경" onAction="#handleCheckBox" />
+                  <CheckBox fx:id="check2" text="모자" onAction="#handleCheckBox" />
+               </children>
+            </VBox>
+
+            <ImageView fx:id="checkImageView" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <!-- Absolute path *NOT* permitted -->
+                  <Image url="@../../../images/geek.gif" />
+               </image>
+            </ImageView>
+
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+
+            <VBox prefHeight="100.0" prefWidth="150.0" spacing="20.0" alignment="CENTER_LEFT">
+               <fx:define><ToggleGroup fx:id="group" /></fx:define>
+               <children>
+                  <RadioButton fx:id="radio1" toggleGroup="$group" text="BubbleChart" userData="BubbleChart" />
+                  <RadioButton fx:id="radio2" toggleGroup="$group" text="BarChart" userData="BarChart" selected="true" />
+                  <RadioButton fx:id="radio3" toggleGroup="$group" text="AreaChart" userData="AreaChart" />
+               </children>
+            </VBox>
+
+            <ImageView fx:id="radioImageView" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <!-- Absolute path *NOT* permitted -->
+                  <Image url="@../../../images/BarChart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+
+   <bottom>
+      <Button fx:id="exitButton" BorderPane.alignment="CENTER" onAction="#handleExit">
+         <graphic>
+            <ImageView>
+               <image>
+                  <!-- Absolute path *NOT* permitted -->
+                  <Image url="@../../../images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+
+</BorderPane>

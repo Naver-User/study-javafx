@@ -1,0 +1,19 @@
+/* Select All Label controls */
+Label {
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+    -fx-font-family: "Lucida Sans Unicode";
+    -fx-font-size: 12px
+}
+
+/* Select one control having id="lblId" property */
+#lblId {
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+}
+
+/* Select all controls having styleClass="lblClass" property */
+.lblClass {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

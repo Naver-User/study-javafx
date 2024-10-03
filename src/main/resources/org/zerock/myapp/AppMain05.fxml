@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+
+<!-- HBox hbox = new HBox(); -->
+<HBox>
+
+    <!-- hbox.setPadding(new Insets(10, 10, 10, 10)); -->
+    <!-- hbox.setPadding(new Insets(10)); -->
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+
+    <!-- hbox.setSpacing(10); -->
+    <spacing>10</spacing>
+
+    <!-- ObservableList<Node> children = </Node>hbox.getChildren(); -->
+    <children>       <!-- Could be abbreviated. -->
+        <!-- TextField textField = new TextField(); -->
+        <TextField prefWidth="200">
+            <!-- textField.setPrefWidth(200); -->
+            <!-- <prefWidth>200</prefWidth> -->
+        </TextField>
+
+        <!-- Button button = new Button(); -->
+        <Button text="Confirm">
+            <!-- button.setText("Confirm"); -->
+            <!--<text>Confirm</text>-->
+        </Button>
+
+        <!-- children.addAll(textField, button); -->
+
+        <!-- children.add(textField); -->
+        <!-- children.add(button); -->
+    </children>       <!-- Could be abbreviated. -->
+
+</HBox>

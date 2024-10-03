@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane
+    prefHeight="212.0"
+    prefWidth="281.0"
+
+    xmlns="http://javafx.com/javafx/21.0.1"
+    xmlns:fx="http://javafx.com/fxml/1"
+
+    fx:id="root"
+    fx:controller="org.zerock.myapp.controller.RootController19">
+
+   <children>
+
+      <!-- The following layout properties must *NOT* be set to center this circle in the root:
+          layoutX="141.0"
+          layoutY="106.0"
+      -->
+      <Circle
+          fx:id="circle"
+          fill="DODGERBLUE"
+          radius="60.0"
+          strokeWidth="0.0" />
+
+   </children>
+
+</AnchorPane>

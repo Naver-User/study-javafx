@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox prefHeight="300.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.zerock.myapp.controller.RootController25">
+
+   <children>
+
+      <PieChart fx:id="pieChart">
+        <HBox.margin>
+            <Insets topRightBottomLeft="5.0" />
+        </HBox.margin>
+      </PieChart>
+
+      <BarChart fx:id="barChart">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+
+        <HBox.margin>
+            <Insets topRightBottomLeft="5.0" />
+        </HBox.margin>
+      </BarChart>
+       
+      <AreaChart fx:id="areaChart">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+
+        <HBox.margin>
+            <Insets topRightBottomLeft="5.0" />
+        </HBox.margin>
+      </AreaChart>
+
+   </children>
+</HBox>

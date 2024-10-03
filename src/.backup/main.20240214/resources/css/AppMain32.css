@@ -1,0 +1,35 @@
+#vbox1 {
+    -fx-background-color: rgba(255, 0, 0, 1.0);
+}
+#vbox2 {
+    /* linear gradient color from black to white and to right direction */
+    -fx-background-color: linear-gradient(to right, #ff0000, #ffffff);
+}
+#vbox3 {
+    /* radial gradient color, center and whole area of the element from white to black */
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #ffffff 30%, #ff0000);
+}
+#vbox4 {
+    -fx-border-color: skyblue;
+    -fx-background-image: url("../images/icon.gif");
+    -fx-background-repeat: repeat;
+}
+#vbox5 {
+    /* The specified image cannot be applied as a absolute path, only relative path */
+    -fx-background-image: url("../images/icon.gif");
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-color: linear-gradient(to left, #ff0000, #ffffff);
+}
+#vbox6 {
+    /* The specified image cannot be applied as a absolute path, only relative path */
+    -fx-background-image: url("../images/icon.gif");
+
+    /* background image is NOT repeated */
+    -fx-background-repeat: no-repeat;
+    /* Set the background image to the center of the element area */
+    -fx-background-position: center;
+
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ff0000);
+}
+
